@@ -42,7 +42,7 @@ function divide(left, right) {
 	if (right === 0) {
 		return NaN;
 	}
-	
+
 	//if either parameter is negative, this loop doesnt work.
 	//in reality, the loop only works if both parameters are positive, so we take the absolute value of both
 	// and figure out when to negate the result
@@ -56,12 +56,12 @@ function divide(left, right) {
 		right = negative(right);
 	}
 
-  	var result = 0;
-  	while(left >= right) {
-      left = subtract(left, right);
-      result = add(result,1);
-  	}
-  	return negateResult ? negative(result) : result;
+	var result = 0;
+	while(left >= right) {
+		left = subtract(left, right);
+		result = add(result,1);
+	}
+	return negateResult ? negative(result) : result;
 }
 
 function square(a) {
