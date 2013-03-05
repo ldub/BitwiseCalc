@@ -29,8 +29,8 @@ function multiply(left, right) {
 	}
 
 	var result = 0;
-	for (var i = 0; i < right; i ++) {
-		result += left;
+	for (var i = 0; i < right; i = add(i, 1)) {
+		result = add(result, left);
 	}
 	return negateResult ? negative(result) : result;
 }
