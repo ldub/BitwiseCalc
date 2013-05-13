@@ -1,4 +1,4 @@
-Calc-NoOperators
+BitwiseCalc
 ================
 
 Simple arithmetic functions written in javascript using only bitwise operators.
